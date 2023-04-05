@@ -572,8 +572,14 @@ void ofApp::draw(){
 			int hundreds = (tickyTocky / 100) % 10; // get the hundreds digit
 			numSides = tens + (hundreds * 10);
 			numStacks = tens + (hundreds * 10);
+			if (numSides > 50) {
+				numSides =- 50;
+			}
 			if (numSides < 3) {
 				numSides = 3;
+			}
+			if (numStacks > 50) {
+				numStacks = -50;
 			}
 			if (numStacks < 3) { 
 				numStacks = 3;
@@ -587,8 +593,14 @@ void ofApp::draw(){
 			int hundreds = (tickyTocky / 100) % 10; // get the hundreds digit
 			numSides = tens + (hundreds * 10);
 			numStacks = tens + (hundreds * 10);
+			if (numSides > 50) {
+				numSides = -50;
+			}
 			if (numSides < 3) {
 				numSides = 3;
+			}
+			if (numStacks > 50) {
+				numStacks = -50;
 			}
 			if (numStacks < 3) {
 				numStacks = 3;
